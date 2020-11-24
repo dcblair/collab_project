@@ -1,9 +1,11 @@
-nav ul li {
-  text-decoration: none;
-  display: inline-block;
-  margin-right: .3em;
-}
+/* nav {
+  /* position: absolute; */
+/* }  */
 
 h1 {
   color: chartreuse;
+}
+
+.nav-links{
+  text-align: center;
 }
