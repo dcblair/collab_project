@@ -1,11 +1,70 @@
-/* nav {
-  /* position: absolute; */
-/* }  */
-
-h1 {
-  color: chartreuse;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap');
+.nav-link {
+  color: black
 }
 
-.nav-links{
-  text-align: center;
+.dashboard {
+  margin: 20px 0px 10px 15px;
+  justify-content: space-around;
+  color: black
+}
+
+.glam-logo {
+  padding: 20px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.customers-link {
+  font-weight: 800;
+}
+
+.vert-nav {
+  background: #FFDDBA;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  max-height: 100%;
+  height: 100vh;
+}
+
+.nav-item {
+  margin: 15px 0 10px 0px;
+}
+
+.customers-header {
+  margin: 50px 0px 30px 0px;
+}
+
+.customers-table {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+.settings {
+  position: absolute;
+  top: 93%;
+}
+
+#settings-icon {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.settings-link {
+  color: black
+}
+
+.table-header {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+td, th, tr {
+  border: 1.5px solid;
+}
+
+.user-table {
+  max-width: 90%;
 }

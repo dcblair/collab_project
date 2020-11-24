@@ -1,0 +1,52 @@
+<div class="container-fluid dash-cont">
+  <div class="row">
+    <div class="col=sm vert-nav">
+      <img src="/assets/images/Glampedia_Logo.png" alt="Glampedia logo" width="220" class="glam-logo">
+      <ul class="nav flex-column dashboard">
+        <li class="nav-item">
+          <a class="nav-link active customers-link" href="#">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="settings">
+          <img src="/assets/images/settings_icon.png" alt="Settings" id="settings-icon"><a href="/settings" class="settings-link">  Settings</a> 
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md customers-table">
+      <h2 class="customers-header">Customers</h2>
+      <table class="table user-table">
+        <tr class="table-header">
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+        <% for(let i = 0; i < user.length; i ++) { %>
+          <tr>
+            <th> <%= user[i].id %> </th>
+            <th> <%= user[i].firstName %> </th>
+            <th> <%= user[i].lastName %> </th>
+            <th> <%= user[i].email %> </th>
+          </tr>
+        <% } %> 
+        <% for(let i = 0; i < 10; i ++) { %>
+          <tr>
+            <th> . </th>
+            <th> . </th>
+            <th> . </th>
+            <th> . </th>
+          </tr>
+        <% } %> </tr>
+      </table>
+    </div>
+  </div>
+</div>

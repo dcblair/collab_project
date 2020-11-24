@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const layouts = require('express-ejs-layouts');
 const app = express();
+const db = require('./models');
 
 app.set('view engine', 'ejs');
 
@@ -20,6 +21,13 @@ app.get('/', (req, res) => {
 
 app.get('/profile', (req, res) => {
   res.render('profile');
+});
+
+app.get('/dashboard', (req, res) => {
+  db.user.findAll()
+    .then((user) => {
+      res.render('dashboard', { user })
+    })
 });
 
 app.use('/user', require('./routes/user'));
